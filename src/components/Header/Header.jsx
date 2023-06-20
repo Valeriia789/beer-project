@@ -15,7 +15,7 @@ const Header = () => {
     <HeaderStyled>
       <LogoContainer>
         <LogoIcon></LogoIcon>
-        <LogoTitle> BEER MARKEt</LogoTitle>
+        <LogoTitle>BEEr MARKEt</LogoTitle>
       </LogoContainer>
 
       <AddressContainer>
