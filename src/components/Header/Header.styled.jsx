@@ -1,25 +1,35 @@
 import styled from "styled-components";
+import headerBgImg from "./headerBgImg.jpg";
 import beerIcon from "./beerIcon.svg";
 import telIcon from "./telIcon.svg";
 
 export const HeaderStyled = styled.header`
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
 
-  padding: 12px 6px;
-  /* padding: 20px 60px; */
+  background: url(${headerBgImg});
+  background-repeat: no-repeat;
+  background-size: cover;
+
   font-family: "Oswald";
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  /* width: 100%; */
+  justify-content: space-between;
+  padding: 6px 12px;
 `;
 
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
 
-  margin-right: auto;
-/* 
-  padding: 10px; */
+  /* padding: 10px; */
 `;
+
+export const LogoTitleContainer = styled.div``;
 
 export const LogoIcon = styled.div`
   width: 32px;
@@ -35,7 +45,7 @@ export const LogoIcon = styled.div`
 `;
 
 export const LogoTitle = styled.h2`
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 
   /* font-size: 48px;
@@ -46,12 +56,8 @@ export const LogoTitle = styled.h2`
 
 export const AddressContainer = styled.address`
   display: flex;
-  /* align-items: start; */
-  justify-content: space-between;
 
   /* padding: 10px; */
-
-  font-family: "Oswald";
 
   font-size: 8px;
   font-weight: 500;
@@ -62,12 +68,13 @@ export const AddressContainer = styled.address`
 export const TitleStyled = styled.h2`
   font-size: 10px;
   font-weight: 700;
+
   /* font-size: 18px;
   font-weight: 700; */
 `;
 
 export const AddressStyled = styled.address`
-margin-left: 10px;
+  margin-left: 10px;
 `;
 
 export const TelContainer = styled.div`
@@ -76,8 +83,8 @@ export const TelContainer = styled.div`
 `;
 
 export const TelIcon = styled.div`
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   /* width: 16px;
   height: 16px; */
 

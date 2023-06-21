@@ -1,4 +1,4 @@
-@import url('./fonts/fonts.css');
+@import url("./fonts/fonts.css");
 
 body {
   margin: 0;
@@ -14,11 +14,23 @@ body {
     monospace;
 } */
 
-h1,h2,h3,h4,h5,h6,p,a,address,div, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+header,
+div,
+ul,
+li {
   margin: 0;
+  padding: 0;
 }
 
 a {
-
   color: black;
 }

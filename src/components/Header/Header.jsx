@@ -1,6 +1,8 @@
 import {
   HeaderStyled,
+  HeaderContainer,
   LogoContainer,
+  LogoTitleContainer,
   LogoIcon,
   LogoTitle,
   AddressContainer,
@@ -13,17 +15,21 @@ import {
 const Header = () => {
   return (
     <HeaderStyled>
+      <HeaderContainer>
       <LogoContainer>
         <LogoIcon></LogoIcon>
-        <LogoTitle>BEEr MARKEt</LogoTitle>
+        <LogoTitleContainer>
+        <LogoTitle>BEEr</LogoTitle>
+        <LogoTitle>MARKEt</LogoTitle>
+        </LogoTitleContainer>
       </LogoContainer>
 
       <AddressContainer>
-        <address>
+        <AddressStyled>
           <TitleStyled>Наша адреса:</TitleStyled>
           <p>м. Київ, </p>
-          <p>вул. Степана Бандери 136</p>
-        </address>
+          <p>вул. Степана Бандери</p>
+        </AddressStyled>
 
         <AddressStyled>
           <TitleStyled>Години роботи:</TitleStyled>
@@ -35,6 +41,7 @@ const Header = () => {
           </TelContainer>
         </AddressStyled>
       </AddressContainer>
+      </HeaderContainer>
     </HeaderStyled>
   );
 };
