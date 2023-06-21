@@ -17,16 +17,21 @@ export const HeaderStyled = styled.header`
 
 export const HeaderContainer = styled.div`
   display: flex;
-  /* width: 100%; */
   justify-content: space-between;
   padding: 6px 12px;
+
+  @media (min-width: 481px) {
+    padding: 12px 24px;
+  }
+
+  @media (min-width: 769px) {
+    padding: 16px 32px;
+  }
 `;
 
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-
-  /* padding: 10px; */
 `;
 
 export const LogoTitleContainer = styled.div``;
@@ -34,47 +39,85 @@ export const LogoTitleContainer = styled.div``;
 export const LogoIcon = styled.div`
   width: 32px;
   height: 32px;
-  /* width: 48px;
-  height: 48px; */
 
   margin-right: 5px;
 
   background: url(${beerIcon});
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-width: 481px) {
+    width: 42px;
+    height: 42px;
+  }
+
+  @media (min-width: 769px) {
+    width: 48px;
+    height: 48px;
+
+    margin-right: 10px;
+  }
 `;
 
 export const LogoTitle = styled.h2`
   font-size: 16px;
   font-weight: 500;
 
-  /* font-size: 48px;
-  font-weight: 700; */
-
   text-shadow: 1px 1px 2px grey;
+
+  @media (min-width: 481px) {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  @media (min-width: 769px) {
+    font-size: 34px;
+    font-weight: 700;
+  }
 `;
 
 export const AddressContainer = styled.address`
   display: flex;
-
-  /* padding: 10px; */
+  align-items: center;
 
   font-size: 8px;
   font-weight: 500;
-  /* font-size: 14px;
-  font-weight: 500; */
+
+  @media (min-width: 481px) {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 769px) {
+    font-size: 16px;
+  }
 `;
 
 export const TitleStyled = styled.h2`
   font-size: 10px;
   font-weight: 700;
 
-  /* font-size: 18px;
-  font-weight: 700; */
+  text-decoration: underline;
+
+  @media (min-width: 481px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 769px) {
+    font-size: 16px;
+  }
 `;
 
 export const AddressStyled = styled.address`
   margin-left: 10px;
+
+  @media (min-width: 481px) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: 769px) {
+    margin-left: 40px;
+  }
 `;
 
 export const TelContainer = styled.div`
@@ -85,11 +128,19 @@ export const TelContainer = styled.div`
 export const TelIcon = styled.div`
   width: 10px;
   height: 10px;
-  /* width: 16px;
-  height: 16px; */
 
   margin-right: 5px;
   background: url(${telIcon});
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (min-width: 481px) {
+    width: 12px;
+  height: 12px;
+  }
+
+  @media (min-width: 769px) {
+    width: 14px;
+  height: 14px;
+  }
 `;

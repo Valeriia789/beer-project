@@ -12,7 +12,6 @@ const HomePageCardsList = ({ advertisingProducts }) => {
       <CardsList>
         {advertisingProducts.map((advertisingProduct) => (
           <ListItem>
-
             <StyledImage src={advertisingProduct.imgUrl} alt="" />
 
             <StyledTitle>{advertisingProduct.title}</StyledTitle>
