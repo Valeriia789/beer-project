@@ -3,10 +3,10 @@
 // import lemonadeImg from './lemonade.jpg'
 // import snackImg from './snack.jpg'
 
-import beerImg from './main1.jpg'
-import sidrImg from './main3.jpg'
-import lemonadeImg from './main.jpg'
-import snackImg from './main2.jpg'
+import beerImg from './homePageImg.jpg'
+import sidrImg from './homePageImg2.jpg'
+import lemonadeImg from './homePageImg3.jpg'
+import snackImg from './homePageImg4.jpg'
 
 export const advertisingProducts = [
   { id: "id-1", title: "Пиво", imgUrl: beerImg },

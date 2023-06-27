@@ -64,6 +64,7 @@ export const LogoTitle = styled.h2`
   font-weight: 500;
 
   text-shadow: 1px 1px 2px grey;
+  /* text-shadow: 1px 1px 2px #e9c147; */
 
   @media (min-width: 481px) {
     font-size: 28px;
@@ -82,6 +83,8 @@ export const AddressContainer = styled.address`
 
   font-size: 8px;
   font-weight: 500;
+
+  text-shadow: 1px 1px 2px #e9c147;
 
   @media (min-width: 481px) {
     font-size: 12px;
