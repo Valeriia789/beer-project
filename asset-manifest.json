@@ -1,30 +1,29 @@
 {
   "files": {
     "main.css": "/beer-project/static/css/main.8e89d5fb.css",
-    "main.js": "/beer-project/static/js/main.33f6143b.js",
-    "static/media/main1.jpg": "/beer-project/static/media/main1.f85e4cd9d90e9f5c689c.jpg",
-    "static/media/bodyBgImg.jpg": "/beer-project/static/media/bodyBgImg.55dced9496d794cc9edc.jpg",
-    "static/media/headerBgImg.jpg": "/beer-project/static/media/headerBgImg.529be0f012624c36074e.jpg",
-    "static/media/main.jpg": "/beer-project/static/media/main.5bd03e8c27488c89b373.jpg",
+    "main.js": "/beer-project/static/js/main.aa72ff73.js",
+    "static/media/bodyBgImg.jpg": "/beer-project/static/media/bodyBgImg.c09aef25733bd40795e0.jpg",
     "static/media/SourceCodePro-Light.ttf": "/beer-project/static/media/SourceCodePro-Light.41b3040e2362ee39aad6.ttf",
     "static/media/SourceCodePro-Bold.ttf": "/beer-project/static/media/SourceCodePro-Bold.f76c0ac131d163cc3feb.ttf",
     "static/media/SourceCodePro-Medium.ttf": "/beer-project/static/media/SourceCodePro-Medium.f4fa00a9bdfab752a663.ttf",
     "static/media/SourceCodePro-SemiBold.ttf": "/beer-project/static/media/SourceCodePro-SemiBold.bebce5c0206b404700b3.ttf",
+    "static/media/headerBgImg.jpg": "/beer-project/static/media/headerBgImg.1444d6a797149731ca07.jpg",
     "static/media/Oswald-SemiBold.ttf": "/beer-project/static/media/Oswald-SemiBold.7ea6b749e7a829164007.ttf",
     "static/media/Oswald-Bold.ttf": "/beer-project/static/media/Oswald-Bold.87c9feafd7b2f3fd7992.ttf",
     "static/media/Oswald-Medium.ttf": "/beer-project/static/media/Oswald-Medium.292bdf409c7b9c1c5683.ttf",
     "static/media/Oswald-Light.ttf": "/beer-project/static/media/Oswald-Light.0db1d0c56bdf030d9f31.ttf",
     "static/media/Oswald-Regular.ttf": "/beer-project/static/media/Oswald-Regular.e815068d369177121fd8.ttf",
-    "static/media/main2.jpg": "/beer-project/static/media/main2.162b586e77513e7984d5.jpg",
-    "static/media/main3.jpg": "/beer-project/static/media/main3.47c2a8b706ef244986d8.jpg",
+    "static/media/homePageImg.jpg": "/beer-project/static/media/homePageImg.abdbb0bef69aeebb07ba.jpg",
+    "static/media/homePageImg3.jpg": "/beer-project/static/media/homePageImg3.597eccfd874332c67936.jpg",
+    "static/media/homePageImg4.jpg": "/beer-project/static/media/homePageImg4.400cafca4ada8a8046e1.jpg",
     "static/media/beerIcon.svg": "/beer-project/static/media/beerIcon.73286b7790726ca9382054b60e34f725.svg",
     "static/media/telIcon.svg": "/beer-project/static/media/telIcon.a8a7fa76a1e41350c3e8196a4d36d1c3.svg",
     "index.html": "/beer-project/index.html",
     "main.8e89d5fb.css.map": "/beer-project/static/css/main.8e89d5fb.css.map",
-    "main.33f6143b.js.map": "/beer-project/static/js/main.33f6143b.js.map"
+    "main.aa72ff73.js.map": "/beer-project/static/js/main.aa72ff73.js.map"
   },
   "entrypoints": [
     "static/css/main.8e89d5fb.css",
-    "static/js/main.33f6143b.js"
+    "static/js/main.aa72ff73.js"
   ]
 }
