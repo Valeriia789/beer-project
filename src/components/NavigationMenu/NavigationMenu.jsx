@@ -15,6 +15,10 @@ const NavigationMenu = () => {
           Напої
         </NavLink>
 
+        <NavLink to="/beer">
+          Пиво
+        </NavLink>
+
         <NavLink to="/snacks">
           Снеки
         </NavLink>
