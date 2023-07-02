@@ -1,40 +1,14 @@
-import { Outlet, NavLink } from "react-router-dom";
-import { Suspense } from "react";
-
-import {NavContainer} from './NavigationMenu.styled'
+import { NavContainer, StyledLink } from "./NavigationMenu.styled";
 
 const NavigationMenu = () => {
   return (
     <NavContainer>
-
-        <NavLink to="/" end>
-          Головна
-        </NavLink>
-
-        <NavLink to="/drinks">
-          Напої
-        </NavLink>
-
-        <NavLink to="/beer">
-          Пиво
-        </NavLink>
-
-        <NavLink to="/snacks">
-          Снеки
-        </NavLink>
-
-        <NavLink to="/promotions">
-          Акції
-        </NavLink>
-
-        <NavLink to="/contacts">
-          Контакти
-        </NavLink>
-
-
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
-      {/* <Outlet /> */}
-      {/* </Suspense> */}
+      <StyledLink to="/" end>Головна</StyledLink>
+      <StyledLink to="/drinks">Напої</StyledLink>
+      <StyledLink to="/beer">Пиво</StyledLink>
+      <StyledLink to="/snacks">Снеки</StyledLink>
+      <StyledLink to="/promotions">Акції</StyledLink>
+      <StyledLink to="/contacts">Контакти</StyledLink>
     </NavContainer>
   );
 };

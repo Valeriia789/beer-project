@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  CardContainer,
   ListItem,
   ProductImage,
   ProductInfoContainer,

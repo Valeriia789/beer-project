@@ -22,3 +22,13 @@ export const NavContainer = styled.nav`
     font-size: 18px;
   }
 `;
+
+export const StyledLink = styled(NavLink)`
+  font-family: "Oswald";
+  font-size: 16px;
+  font-weight: 300;
+
+    &.active {
+      text-shadow: 1px 1px 1px #ebebc2, 1px 8px 8px #fcf525;
+  }
+`
