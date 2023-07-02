@@ -5,9 +5,10 @@ import {
   ProductImage,
   ProductInfoContainer,
   ProductTitle,
-  QuantityContainer,
+  CounterContainer,
   PriceContainer,
   InitialPriceStyled,
+  CounterButton,
 } from "./ProductCard.styled";
 
 const ProductCard = ({ product }) => {
@@ -33,11 +34,11 @@ const ProductCard = ({ product }) => {
       <ProductImage src={product.imgUrl} alt="" />
       <ProductInfoContainer>
         <ProductTitle>{product.title}</ProductTitle>
-        <QuantityContainer>
-          <button onClick={decreaseQuantity}>-</button>
+        <CounterContainer>
+          <CounterButton onClick={decreaseQuantity}>-</CounterButton>
           <p>{quantity} л.</p>
-          <button onClick={increaseQuantity}>+</button>
-        </QuantityContainer>
+          <CounterButton onClick={increaseQuantity}>+</CounterButton>
+        </CounterContainer>
 
         <PriceContainer>
           <InitialPriceStyled>

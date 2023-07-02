@@ -7,7 +7,7 @@ export const StyledList = styled.ul`
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 20px;
 
   padding: 16px 20px;

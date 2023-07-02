@@ -1,5 +1,5 @@
 export const beerData = [
-  { id: "id-1", title: "Світлий лагер", imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFoSIzHKitwrZgBqlmEjsTQdl-2xxdlMSM_j2EYGzEGGwukrqNjZS-HwSOOQjOhK4QPU&usqp=CAU', price: 20, quantity: 0.5 },
+  { id: "id-1", title: "Світлий лагер", imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFoSIzHKitwrZgBqlmEjsTQdl-2xxdlMSM_j2EYGzEGGwukrqNjZS-HwSOOQjOhK4QPU&usqp=CAU', price: 45, quantity: 1 },
   { id: "id-2", title: "Пілзнер", imgUrl: 'https://img.freepik.com/premium-vector/types-of-beer-illustration-alcoholic-beverage-menu-collection-set_1995-600.jpg?w=2000', price: 22, quantity: 0.5 },
   { id: "id-3", title: "Бок", imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wOD5P8G0nc32jzrFQG9bBV8ZwLrkT4EqdpkNfpBXKVZE5fRzq_S2_cY9Qs837HTr8kI&usqp=CAU', price: 24, quantity: 0.5 },
   { id: "id-4", title: "Шотландський ель", imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ist5y2uYoiMIu5ohnO5FbdGwpLkZUD1xjlBpeqpMNlo9fw0Nf7Tcheo8tVd8bAmp-lk&usqp=CAU', price: 24, quantity: 0.5 },
