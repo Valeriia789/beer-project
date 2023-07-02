@@ -13,7 +13,7 @@ export const StyledList = styled.ul`
   padding: 16px 20px;
 
   list-style: none;
-  background-color: #a7a6a28d;
+  background-color: rgb(255, 241, 118, 0.25);
 
   @media (min-width: 481px) {
     padding: 32px 84px;

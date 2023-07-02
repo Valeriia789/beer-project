@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div``;
 
 export const ListItem = styled.li`
-  background-color: #f4ecec82;
+  background-color: rgb(255, 241, 118, 0.5);
 
   max-width: min-content;
 

@@ -10,7 +10,7 @@ export const NavContainer = styled.nav`
   font-size: 10px;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #f2bf33c5;
+  /* background-color: rgb(255, 241, 118, 0.25); */
 
   @media (min-width: 481px) {
     padding: 12px 24px;

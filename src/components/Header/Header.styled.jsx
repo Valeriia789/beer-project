@@ -12,7 +12,7 @@ export const HeaderStyled = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
 
-  font-family: "Oswald";
+  font-family: ${props => props.theme.fonts.main};
 `;
 
 export const HeaderContainer = styled.div`
@@ -63,8 +63,8 @@ export const LogoTitle = styled.h2`
   font-size: 16px;
   font-weight: 500;
 
+  /* text-shadow: 1px 1px 2px grey, 0px 10px 10px rgba(233, 193, 71, 1); */
   text-shadow: 1px 1px 2px grey;
-  /* text-shadow: 1px 1px 2px #e9c147; */
 
   @media (min-width: 481px) {
     font-size: 28px;
@@ -84,7 +84,7 @@ export const AddressContainer = styled.address`
   font-size: 8px;
   font-weight: 500;
 
-  text-shadow: 1px 1px 2px #e9c147;
+  text-shadow: 1px 1px 2px rgba(233, 193, 71, 1);
 
   @media (min-width: 481px) {
     font-size: 12px;

@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from 'styled-components';
+import { theme, light, dark } from '../theme';
 
 import Header from "./Header/Header";
 import { HomePage } from "../pages/HomePage/HomePage";
@@ -13,6 +15,8 @@ import { BodyContainer } from "./App.styled";
 
 export const App = () => {
   return (
+    <ThemeProvider theme={theme}>
+
     <BodyContainer>
       <Header></Header>
       <NavigationMenu></NavigationMenu>
@@ -27,5 +31,6 @@ export const App = () => {
       </Routes>
 
     </BodyContainer>
+    </ThemeProvider>
   );
 };

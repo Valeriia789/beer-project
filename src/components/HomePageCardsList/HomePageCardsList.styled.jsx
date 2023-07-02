@@ -24,7 +24,8 @@ export const CardsList = styled.ul`
   padding: 16px 20px;
 
   list-style: none;
-  background-color: #a7a6a28d;
+  background-color:  rgb(255, 241, 118, 0.25);
+  /* background-color: rgba(189, 189, 189, 0.5) */
 `;
 
 export const ListItem = styled.li`
@@ -53,7 +54,7 @@ export const StyledImage = styled.img`
 `;
 
 export const StyledTitle = styled.h3`
-  background-color: #e0cf537f;
+  background-color: rgb(255, 241, 118, 0.5);
 
   position: absolute;
 
@@ -69,7 +70,7 @@ export const StyledTitle = styled.h3`
   font-weight: 400;
   color: #000000c5;
 
-  text-shadow: 2px 2px 4px #e9c147;
+  text-shadow: 2px 2px 4px rgba(233, 193, 71, 1);
 
   /* transform: scale(1);
   transition: transform 0.5s ease-in-out;
@@ -80,7 +81,7 @@ export const StyledTitle = styled.h3`
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: #e0cf532c;
+    background-color: rgb(255, 241, 118, 0.25);
     color: transparent;
     text-shadow: none;
   }
