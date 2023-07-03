@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import { theme, light, dark } from "../theme";
+import { lazy } from "react";
 
 import { SharedLayout } from "./SharedLayout/SharedLayout";
 
@@ -11,7 +10,16 @@ import { BeerPage } from "../pages/BeerPage/BeerPage";
 import { PromotionsPage } from "../pages/PromotionsPage/PromotionsPage";
 import { SnacksPage } from "../pages/SnacksPage/SnacksPage";
 
+import { ThemeProvider } from "styled-components";
+import { theme, light, dark } from "../theme";
 import { BodyContainer } from "./App.styled";
+
+// const HomePage = lazy(() => import("../pages/HomePage/HomePage"));
+// const ContactsPage = lazy(() => import("../pages/ContactsPage/ContactsPage"));
+// const DrinksPage = lazy(() => import("../pages/DrinksPage/DrinksPage"));
+// const BeerPage = lazy(() => import("../pages/BeerPage/BeerPage"));
+// const PromotionsPage = lazy(() => import("../pages/PromotionsPage/PromotionsPage"));
+// const SnacksPage = lazy(() => import("../pages/SnacksPage/SnacksPage"));
 
 export const App = () => {
   return (

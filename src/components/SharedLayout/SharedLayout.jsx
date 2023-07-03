@@ -9,7 +9,10 @@ export const SharedLayout = () => {
     <>
       <Header />
       <NavigationMenu />
-      <Outlet />
+
+      <Suspense fallback={<div>Loading page...</div>}>
+        <Outlet />
+      </Suspense>
     </>
   );
 };

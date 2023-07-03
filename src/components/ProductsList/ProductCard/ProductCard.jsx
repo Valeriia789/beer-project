@@ -29,7 +29,7 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <ListItem>
+    <ListItem key={product.id}>
       <ProductImage src={product.imgUrl} alt="" />
       <ProductInfoContainer>
         <ProductTitle>{product.title}</ProductTitle>
