@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import Header from "../Header/Header";
 import NavigationMenu from "../NavigationMenu/NavigationMenu";
 
-export const SharedLayout = () => {
+const SharedLayout = () => {
   return (
     <>
       <Header />
@@ -16,3 +16,5 @@ export const SharedLayout = () => {
     </>
   );
 };
+
+export default SharedLayout;

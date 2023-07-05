@@ -1,7 +1,7 @@
 import {StyledContainer} from './DrinksPage.styled'
 
 
-export const DrinksPage = () => {
+const DrinksPage = () => {
   return (
     <StyledContainer>
       <h2>Drinks Page coming soon...</h2>
@@ -9,3 +9,5 @@ export const DrinksPage = () => {
     </StyledContainer>
   )
 }
+
+export default DrinksPage

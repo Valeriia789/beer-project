@@ -1,4 +1,4 @@
-export const PromotionsPage = () => {
+const PromotionsPage = () => {
   return (
     <>
       <div>
@@ -12,3 +12,5 @@ export const PromotionsPage = () => {
     </>
   );
 };
+
+export default PromotionsPage

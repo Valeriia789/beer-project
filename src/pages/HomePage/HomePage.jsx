@@ -3,7 +3,7 @@ import HomePageList from "../../components/HomePageList/HomePageList";
 
 import { PageContainer } from "../commonStyles/PageContainer.styled";
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <PageContainer>
       <HomePageList
@@ -12,3 +12,5 @@ export const HomePage = () => {
     </PageContainer>
   );
 };
+
+export default HomePage

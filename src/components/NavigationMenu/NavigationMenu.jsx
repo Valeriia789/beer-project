@@ -3,7 +3,7 @@ import { NavContainer, StyledLink } from "./NavigationMenu.styled";
 const NavigationMenu = () => {
   return (
     <NavContainer>
-      <StyledLink to="/" end>Головна</StyledLink>
+      <StyledLink to="/" >Головна</StyledLink>
       <StyledLink to="/drinks">Напої</StyledLink>
       <StyledLink to="/beer">Пиво</StyledLink>
       <StyledLink to="/snacks">Снеки</StyledLink>

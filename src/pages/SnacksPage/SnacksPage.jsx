@@ -1,4 +1,4 @@
-export const SnacksPage = () => {
+const SnacksPage = () => {
   return (
     <>
       <div>
@@ -12,3 +12,5 @@ export const SnacksPage = () => {
     </>
   );
 };
+
+export default SnacksPage
