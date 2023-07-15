@@ -1,4 +1,4 @@
-// import { beerData } from "../../data/products/beer/beerData";
+import StatusFilter from "../../components/StatusFilter/StatusFilter";
 import ProductsList from "../../components/ProductsList/ProductsList";
 
 import { PageContainer } from "../commonStyles/PageContainer.styled";
@@ -6,6 +6,7 @@ import { PageContainer } from "../commonStyles/PageContainer.styled";
 const BeerPage = () => {
   return (
     <PageContainer>
+      <StatusFilter/>
       <ProductsList></ProductsList>
     </PageContainer>
   );

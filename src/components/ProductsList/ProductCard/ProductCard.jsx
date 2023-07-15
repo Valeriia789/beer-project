@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+// Імпортуємо хук
+import { useDispatch } from "react-redux";
+// Імпортуємо генератор екшену
+import { toggleFavorite } from "../../../redux/beer/actions";
+
 import {
   ProductImage,
   ProductInfoContainer,
@@ -12,6 +17,13 @@ import {
 const ProductCard = ({ product }) => {
   const [quantity, setQuantity] = useState(0);
   const [price, setPrice] = useState(0);
+
+  // Отримуємо посилання на функцію відправки екшенів
+  const dispatch = useDispatch();
+
+  // Викликаємо генератор екшену та передаємо ідентифікатор завдання
+  // Відправляємо результат - екшен перемикання статусу завдання
+  const handleToggle = () => dispatch(toggleFavorite(product.id));
 
   const increaseQuantity = () => {
     setQuantity((quantity) => quantity + product.quantity);
@@ -30,7 +42,11 @@ const ProductCard = ({ product }) => {
   return (
     <>
       <ProductImage src={product.imgUrl} alt="" />
-      <input type="checkbox" checked={product.favorite} />
+      <input
+        type="checkbox"
+        onChange={handleToggle}
+        checked={product.favorite}
+      />
       <ProductInfoContainer>
         <ProductTitle>{product.title}</ProductTitle>
         <CounterContainer>
