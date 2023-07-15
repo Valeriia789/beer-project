@@ -1,14 +1,34 @@
-import ProductCard from "./ProductCard/ProductCard"
-import { StyledList } from "./ProductsList.styled"
+import { useSelector } from "react-redux";
 
-const ProductsList = ({productsList}) => {
+import { getBeerList, getStatusFilter } from "../../redux/beer/selectors";
+import { statusFilters } from "../../redux/beer/constants";
+
+import ProductCard from "./ProductCard/ProductCard";
+import { StyledList, ListItem } from "./ProductsList.styled";
+
+const getVisibleBeerItems = (beerList, statusFilter) => {
+  switch (statusFilter) {
+    case statusFilters.favorite:
+      return beerList.filter((beerItem) => beerItem.favorite);
+    default:
+      return beerList;
+  }
+};
+
+const ProductsList = () => {
+  const beerList = useSelector(getBeerList);
+  const statusFilter = useSelector(getStatusFilter);
+  const visibleBeerItems = getVisibleBeerItems(beerList, statusFilter);
+
   return (
+    <StyledList>
+      {visibleBeerItems.map((beerItem) => (
+        <ListItem key={beerItem.id}>
+          <ProductCard key={beerItem.id} product={beerItem} />
+        </ListItem>
+      ))}
+    </StyledList>
+  );
+};
 
-        <StyledList>
-          {productsList.map((product) => <ProductCard product={product}/>)}
-        </StyledList>
-
-  )
-}
-
-export default ProductsList
+export default ProductsList;

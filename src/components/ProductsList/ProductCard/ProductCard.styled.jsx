@@ -2,22 +2,6 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div``;
 
-export const ListItem = styled.li`
-  background-color: rgb(255, 241, 118, 0.5);
-
-  max-width: min-content;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  padding-bottom: 6px;
-
-  border-radius: 6%;
-  overflow: hidden;
-`;
-
 export const ProductImage = styled.img`
   width: 200px;
   height: 250px;

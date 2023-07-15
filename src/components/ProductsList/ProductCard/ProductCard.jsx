@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  ListItem,
   ProductImage,
   ProductInfoContainer,
   ProductTitle,
@@ -29,8 +28,9 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <ListItem key={product.id}>
+    <>
       <ProductImage src={product.imgUrl} alt="" />
+      <input type="checkbox" checked={product.favorite} />
       <ProductInfoContainer>
         <ProductTitle>{product.title}</ProductTitle>
         <CounterContainer>
@@ -47,7 +47,7 @@ const ProductCard = ({ product }) => {
           <p>Вартість: {price} грн.</p>
         </PriceContainer>
       </ProductInfoContainer>
-    </ListItem>
+    </>
   );
 };
 

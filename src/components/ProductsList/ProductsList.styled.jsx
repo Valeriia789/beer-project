@@ -19,3 +19,19 @@ export const StyledList = styled.ul`
     padding: 32px 84px;
   }
 `;
+
+export const ListItem = styled.li`
+  background-color: rgb(255, 241, 118, 0.5);
+
+  max-width: min-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 6px;
+
+  border-radius: 6%;
+  overflow: hidden;
+`;
