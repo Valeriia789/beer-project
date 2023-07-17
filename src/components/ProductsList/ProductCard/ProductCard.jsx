@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // Імпортуємо хук
 import { useDispatch } from "react-redux";
-// Імпортуємо генератор екшену
-import { toggleFavorite } from "../../../redux/beer/beerListSlice";
+
+import { toggleFavorite } from "../../../redux/beer/operations";
 
 import {
   ProductImage,
@@ -23,10 +23,10 @@ const ProductCard = ({ product }) => {
 
   // Викликаємо генератор екшену та передаємо ідентифікатор завдання
   // Відправляємо результат - екшен перемикання статусу завдання
-  const handleToggle = () => dispatch(toggleFavorite(product.id));
+  const handleToggle = () => dispatch(toggleFavorite(product));
 
   const increaseQuantity = () => {
-    setQuantity((quantity) => quantity + product.quantity);
+    setQuantity((quantity) => quantity + 1);
     setPrice((price) => price + product.price);
   };
 
@@ -35,7 +35,7 @@ const ProductCard = ({ product }) => {
       return;
     }
 
-    setQuantity((quantity) => quantity - product.quantity);
+    setQuantity((quantity) => quantity - 1);
     setPrice((price) => price - product.price);
   };
 
@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
 
         <PriceContainer>
           <InitialPriceStyled>
-            (Ціна: {product.price}грн. /{product.quantity} л.)
+            (Ціна: {product.price}грн. / 1 л.)
           </InitialPriceStyled>
 
           <p>Вартість: {price} грн.</p>
