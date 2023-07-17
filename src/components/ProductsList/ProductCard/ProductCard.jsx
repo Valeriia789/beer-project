@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // Імпортуємо хук
 import { useDispatch } from "react-redux";
 // Імпортуємо генератор екшену
-import { toggleFavorite } from "../../../redux/beer/actions";
+import { toggleFavorite } from "../../../redux/beer/beerListSlice";
 
 import {
   ProductImage,

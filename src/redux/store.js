@@ -1,7 +1,11 @@
-import { createStore } from "redux";
-import { devToolsEnhancer } from "@redux-devtools/extension";
-import { rootReducer } from "./beer/reducer";
+import { configureStore } from "@reduxjs/toolkit";
 
-const enhancer = devToolsEnhancer();
-export const store = createStore(rootReducer, enhancer);
+import { beerListReducer } from './beer/beerListSlice'
+import {filtersReducer} from './beer/filtersSlice'
 
+export const store = configureStore({
+  reducer: {
+    beerList: beerListReducer,
+    filters: filtersReducer,
+  },
+});

@@ -1,5 +1,4 @@
-import { combineReducers } from "redux";
-import { statusFilters } from "./constants";
+import { createSlice } from "@reduxjs/toolkit";
 
 const beerInitialState = [
   { id: "id-1", title: "Світлий лагер", imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFoSIzHKitwrZgBqlmEjsTQdl-2xxdlMSM_j2EYGzEGGwukrqNjZS-HwSOOQjOhK4QPU&usqp=CAU', price: 45, quantity: 1 },
@@ -17,39 +16,26 @@ const beerInitialState = [
   { id: "id-13", title: "Каліфорнійський комен бір", imgUrl: 'https://img.freepik.com/premium-vector/types-of-beer-illustration-alcoholic-beverage-menu-collection-set_1995-600.jpg?w=2000', price: 32, quantity: 0.5 },
 ];
 
-const beerListReducer = (state = beerInitialState, action) => {
-  switch (action.type) {
-    case "beerList/toggleFavorite":
-      return state.map(beerItem => {
-        if (beerItem.id !== action.payload) {
-          return beerItem;
+const beerListSlice = createSlice({
+  // Ім'я слайсу
+  name: "beerList",
+  // Початковий стан редюсера слайсу
+  initialState: beerInitialState,
+  // Об'єкт редюсерів
+  reducers: {
+    toggleFavorite(state, action) {
+      for (const beerItem of state) {
+        if (beerItem.id === action.payload) {
+          beerItem.favorite = !beerItem.favorite;
+          break;
         }
-        return { ...beerItem, favorite: !beerItem.favorite };
-      });
-    default:
-      return state;
-  }
-};
-
-const filtersInitialState = {
-  status: statusFilters.all,
-};
-
-const filtersReducer = (state = filtersInitialState, action) => {
-  switch (action.type) {
-    case "filters/setStatusFilter":
-      return {
-        ...state,
-        status: action.payload,
-      };
-    default:
-      return state;
-  }
-};
-
-export const rootReducer = combineReducers({
-  beerList: beerListReducer,
-  filters: filtersReducer,
+      }
+    },
+  },
 });
 
-
+// Експортуємо генератори екшенів та редюсер
+// Генератори екшенів
+export const { toggleFavorite } = beerListSlice.actions;
+// Редюсер слайсу
+export const beerListReducer = beerListSlice.reducer;

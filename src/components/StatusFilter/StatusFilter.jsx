@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
+
 import { statusFilters } from "../../redux/beer/constants";
 import { getStatusFilter } from "../../redux/beer/selectors";
-import { setStatusFilter } from "../../redux/beer/actions";
+import { setStatusFilter } from "../../redux/beer/filtersSlice";
 
 const StatusFilter = () => {
   const dispatch = useDispatch();
