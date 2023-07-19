@@ -1,4 +1,4 @@
-export const test = (req, res) => {
-  res.json('success')
-  console.log('test is working');
+export const test = (req, res, next) => {
+  res.json('it is successful')
+  // console.log("test is working");
 }
