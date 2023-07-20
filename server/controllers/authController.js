@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 import { createError } from "../errorHandler.js";
 
-export const signUp = async (req, res, next) => {
+export const signup = async (req, res, next) => {
   // console.log(req.body);
   try {
     const salt = bcrypt.genSaltSync(10);
@@ -19,7 +19,7 @@ export const signUp = async (req, res, next) => {
   }
 };
 
-export const signIn = async (req, res, next) => {
+export const signin = async (req, res, next) => {
   try {
     const user = await User.findOne({ name: req.body.name });
     if (!user) return next(createError(404, "User not found"));
