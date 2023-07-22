@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 
 import authRouter from "./routes/auth.js";
 import usersRouter from "./routes/users.js";
-// import beerRouter from './routes/beerRouter.js'
+import beerRouter from './routes/beer.js'
 
 const PORT = process.env.PORT || 5000;
 
@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/users", usersRouter);
-// app.use('/api/beer', beerRouter)
+app.use('/api/beer', beerRouter)
 
 app.use((err, req, res, next) => {
   const status = err.status || 500;
