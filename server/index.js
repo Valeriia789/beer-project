@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 
-import authRouter from "./routes/authRouter.js";
-import usersRouter from "./routes/usersRouter.js";
+import authRouter from "./routes/auth.js";
+import usersRouter from "./routes/users.js";
 // import beerRouter from './routes/beerRouter.js'
 
 const PORT = process.env.PORT || 5000;
@@ -23,7 +23,7 @@ const connect = () => {
     });
 };
 
-app.use(cookieParser())
+app.use(cookieParser());
 app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/users", usersRouter);
