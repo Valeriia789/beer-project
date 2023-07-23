@@ -5,9 +5,7 @@ import { signin } from '../controllers/auth/signin.js'
 
 const router = express.Router()
 
-// Create user
 router.post('/signup', signup)
-// sign in
 router.post('/signin', signin)
 // // google auth
 // router.post('/google')
